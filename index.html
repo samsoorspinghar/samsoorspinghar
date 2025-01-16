@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ps">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of Advanced HTML Structure</title>
+    <style>
+        /* Root Variables */
+        :root {
+            --primary-color: #4caf50;
+            --secondary-color: #2196f3;
+            --accent-color: #ff5722;
+            --dark-color: #1e1e1e;
+            --light-color: #f9f9f9;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --gradient-bg: linear-gradient(135deg, #4caf50, #2196f3);
+            --font-primary: 'Poppins', sans-serif;
+            --transition-speed: 0.4s ease-in-out;
+        }
+
+        /* General Styles */
+        body {
+            font-family: var(--font-primary);
+            margin: 0;
+            padding: 0;
+            background: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+            transition: background-color 0.5s;
+        }
+
+        body.dark-mode {
+            background: #121212;
+            color: #e0e0e0;
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--primary-color);
+            transition: color var(--transition-speed);
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Header */
+        header {
+            background: var(--gradient-bg);
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 10px;
+            gap: 15px;
+        }
+
+        header nav ul li {
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            transition: background var(--transition-speed);
+        }
+
+        header nav ul li:hover {
+            background: #fff;
+            color: var(--dark-color);
+            box-shadow: 0 4px 12px var(--shadow-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px var(--shadow-color);
+            max-width: 1200px;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-color);
+            margin: 10px auto;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 20px auto;
+            color: #666;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-color);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            border-top: 3px solid var(--primary-color);
+        }
+
+        footer .socials {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        footer .socials a {
+            color: #fff;
+            font-size: 1.5rem;
+            transition: transform var(--transition-speed);
+        }
+
+        footer .socials a:hover {
+            transform: scale(1.2);
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our samsoor spinghar group wibsite</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to our samsoor spinghar group!</h2>
+        <p>We are your most reliable,profesional,and trustworthy choice for construction and  logistical<br>services,committed to devlivering quality and meeting your needs with utmost efficiency and timeliness</p>
+        
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Address: 
+            1. Afghanistan, Kabul Province, Paktiakot ,Near Dunya Hospital
+            2. Afghanistan, Nangarhar province ,Spinghar tower B Block
+             Please Contact us for providing you the exact contact details of our representatives in other 
+            provinces such as Paktai,Logar,Kapisa,Parwan,Baghlan, Kunar, Laghman, Ningarhar, etc<br>Samsoor Spinghar Construction Company (SSCC) is an established and it is a registered company with 
+            (Ministry of Commerce and Industries) along with some other Afghan Governmental organizations.
+            SSCC Construction Company has 4 years working experience in the field of construction rehabilitation, provision 
+            of construction materials, varieties of mosaic production and road building in the country, a number of 10 
+            professional and supportive staff, skilled and unskilled worker is involved in delivering activities in the firm. The 
+            following is provided the list of the company executive management. 
+            SSCC was found in 2016 and since 2016 has been working in all sort of construction in Afghanistan. 
+            SSCC is an active organization working with (CBRIP) license No: 33851
+            SSCC organizational structure consists of Head Quarters, Engineering Department, Planning Department, 
+            Finance Department, Survey and Design Department. 
+            Board of Directors-Director General guides SSCC and his management team, which is comprised of all department 
+            and section heads, carries out its management and operations.
+            In addition to the registration with CBRIP, the SSCC Company is a registered with 
+            1. International Medical Corps (IMC)
+            2. Afghanistan Cricket Board (ACB)
+            3. Ministry of Higher Education
+            4. Ministry of Education
+            5. Un HABITAT
+            6. IRC
+            7. NRC
+            8. UNHCR
+            9. Solidarity international (SI)
+            10. DACCAR
+            11. Unicef
+            12. And another NGO’s etc. <br>About SSCC
+           (  Code of Conduct
+            Honesty
+            ,Integrity
+            ,Accountability
+            ,Consideration of others
+            ,Pursuit of Excellence
+            ,Reliability
+            ,Environmental Affairs Policy
+            ,Employee Involvement
+            ,Proactive Approach
+            ,Foresight
+            ,Leadership
+            ,Compliance with Legislation and Regulation
+            ,The Company Team
+            ,Organization Chart 
+            ,Registration with AISA
+            ,Construction Services
+            ,Road Highway Construction
+            ,Grading and Paving
+            ,Design and Build
+            ,Advantages of Design-Build
+            ,Excavation and Mining
+            ,Bridges and Structures
+            ,Underground Pipe and Utilities
+            ,Pavement Maintenance
+             ,Project and Land Development)<br><h1>sscc company organization<br></h1>The SSCC Company is managed through a team of executive body comprising company president , 
+            Technical Manager, Project 
+            Manager, Admin/Finance Manager, Procurement Manager and public relation and Marketing Officer, 
+            There are approximately 7 employees working with this SSCC involved in delivering different services. 
+            The executive body is responsible for taking on new project and finalizing Company decisions and project 
+            proposals. All new policies and proposals must be presented to the executive body for review, consultation, advice 
+            and give it to the firm president for Final approval, In addition, the executive body ensures to be updated on the 
+            overall activates and the status of the company in terms of progress, strengths, weaknesses, achievements and 
+            problems.
+            SSCC recognizes that the achievement of the organization depends on the quality, effort and cooperation of its 
+            employment. We have a responsibility towards our employees, to provide a high standard of employment and 
+            working conditions to treat employees fairly and equitably and to provide them with opportunities to help them 
+            develop and achieve a sense of satisfaction from their work. 
+            In every project, there are dedicated human resources professionals who assist line managers in the 
+            management and development of our staff. The Admin/Finance department is responsible for the compilation and 
+            interpretation of policy in relation to the recruitment, retention and development of company- wide human 
+            resources, in addition to a number of people - related administrative activates. 
+            Management of Design and Construction Process: 
+            In the planning of facilities, SSCC sees it very important to recognize the Close relationship between design and 
+            construction, these processes can best be viewed as an integrated system broadly speaking, design is a 
+            process of creating the description of a new facility, usually represented by detailed plans and specification; 
+            construction planning is a process of identifying activities and resources required to make the design a 
+            physical reality. Hence, construction is the implementation of a design envisioned by architects and 
+            engineer. 
+            Operational tasks are to be performed with a variety of precedence and other relationships among the different 
+            tasks.
+            SSCC recognized that there are several unique characteristics to the planning of construction 
+            facilities and we will keep them in mind even at the very early stage of the project life cycle. These 
+            include the following:
+            .Nearly every facility is custom designed and constructed, it often requires a long time to complete. 
+            .Both the design and construction of a facility must satisfy the conditions peculiar to a specific site. 
+            .Because each project is site specific. Its execution is in influenced by natural, social and other 
+            location conditions such as weather, labor supply, government standards, etc
+            . Because of technological complexity and market demands, of design plans during construction are.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Read Construction</li>
+            <li>Consideration</li>
+            <li>Logistics services</li>
+            <li>Engineering advice</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="image-container">
+            <img src="project1.jpg.jpg" alt="Project 1">
+            <img src="project2.jpg.jpg" alt="Project 2">
+            <img src="project3.jpg.jpg" alt="Project 3">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <ul>
+            <li>Email: Samsoor.spinghar@gmail.com</li>
+            <li>Phone: +795051731</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Samsoor spinghar group. All righs are protected.</p>
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#"></a>
+            <a href="#">whatsApp</a>
+        </div>
+    </footer>
+</body>
+</html>
